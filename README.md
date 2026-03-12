@@ -1,19 +1,19 @@
-# Honmoon
+# vtrp
 
 An Intel VT-rp research project for fun.
 
 ## Overview
 
-Honmoon is a prototype implementation of Intel VT-rp support within a Linux and
-QEMU/KVM environment. It aims to enforce the immutability of kernel code
-mappings after boot.
+This repository is a prototype implementation of Intel VT-rp support within
+a Linux and QEMU/KVM environment. It aims to enforce the immutability of
+kernel code mappings after boot.
 
 ## Hardware Requirements
 
 The host machine must support Intel VT-rp feature.
 
--   **Desktop Processors:** A subset of Alder Lake (12th gen) or newer
--   **Server Processors:** A subset of Granite Rapids (Xeon 6) or newer
+- **Desktop Processors:** A subset of Alder Lake (12th gen) or newer
+- **Server Processors:** A subset of Granite Rapids (Xeon 6) or newer
 
 ## Setup Guide
 
@@ -22,8 +22,8 @@ submodules and builds them.
 
 ```bash
 
-git clone https://github.com/jongukc/honmoon
-cd honmoon
+git clone https://github.com/jongukc/vtrp
+cd vtrp
 ./setup.sh
 ```
 
@@ -33,7 +33,7 @@ Please proceed with caution on production machines.
 After the setup is done, reboot with the newly installed kernel, then execute
 the launch script.
 
-``` bash
+```bash
 ./launch-vm.sh
 ```
 
